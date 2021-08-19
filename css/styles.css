@@ -1,36 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 
 :root {
-    --dark-navy: #140d02;
-    --navy: #0a192f;
-    --light-navy: #112240;
-    --lightest-navy: #544023;
-    --navy-shadow: rgba(53, 45, 43, 0.753);
-    --dark-slate: #706449;
-    --slate: #b0a388;
-    --light-slate: #d1c3a8;
-    --lightest-slate: #cac5b9;
-    --white: #fff7e6;
-    --green: #ffb000;
+    --dark-navy: #f5e5ce;
+    --lightest-navy: #4c2b15;
+    --navy-shadow: #4c2b15;
+    --dark-slate: #ffbd59;
+    --slate: #4c2b15;
+    --light-slate: #4c2b15;
+    --lightest-slate: #4c2b15;
+    --white: #70c156;
+    --green: #ffbd59;
 
     --font-mono: 'PT Mono';
     --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-luckiest: 'Luckiest Guy', cursive;
   }
 
 h1 {
   color: var(--lightest-slate);
+  font-family: var(--font-luckiest);
 }
 
 h2, h3, h4, h5, h6 {
     color: var(--slate);
+    font-weight: 700 !important;
 }  
 
 body {
     color: var(--lightest-slate);
     background-color: var(--dark-navy);
     font-family: var(--font-sans);
+    font-weight: 700;
 }
 
 .green-text{
@@ -68,17 +71,18 @@ main>.container {
 
 nav {
     background-color: var(--dark-navy);
+    font-family: var(--font-sans);
 }
 
 .nav-link:hover {
-    color: var(--green) !important;
+    color: var(--dark-slate) !important;
 }
 
 .nav-link{
     color: var(--slate) !important;
     padding-top: 10px !important;
-    font-family: var(--font-sans);
-    font-size: 1.1em;
+    font-family: var(--font-luckiest);
+    font-size: 1.5em;
 }
 
 .nav-item {
@@ -86,7 +90,7 @@ nav {
 }
 
 .nav-active {
-    color: var(--green) !important;
+    color: var(--dark-slate) !important;
 }
 
 .navbar-toggler {
@@ -95,15 +99,15 @@ nav {
 
 /* Button */
 .btn {
-  color: var(--green) !important;
-  border-color: var(--green) !important;
-  font-size: 1.1em;
+  font-family: var(--font-luckiest);
+  color: var(--dark-navy);
+  background-color: var(--slate) !important;
+  font-size: 1.3em;
 }
 
 .btn:hover {
-  color: var(--green);
-  background-color:rgba(187, 151, 75, 0.123);
-  border-color: var(--green);
+  background-color: var(--green) !important;
+  color: var(--slate) !important;
 }
 
 .checklist >li i{
@@ -159,7 +163,7 @@ a:hover {
 
 .icon {
   font-size: 1.3em; 
-  color: #b0a388;
+  color: var(--slate);
 }
 
   .test {

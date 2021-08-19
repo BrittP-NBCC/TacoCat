@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Brittany Pitre</title>
+    <title>TacoCat: A Coding Project by Brittany Pitre</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,8 +25,8 @@
     <nav class="navbar navbar-expand-md pt-4 pb-3 fixed-top navbar-dark">
     <div class="container-fluid">
         <!--Logo-->
-        <a class="navbar-brand" href="index.html" title="HUNDO">
-            <img src="/img/hundo.small.png" width="100" alt="Logo" class=" hover d-inline ms-3">
+        <a class="navbar-brand" href="index.html" title="TacoCat">
+            <img src="/img/taco-logo-small.png" width="100" alt="TacoCat Logo" class=" hover d-inline ms-3">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,13 +47,42 @@
         </div>
     </div>
     </nav>
-
+    
     <!--Main-->
     <main class="flex-shrink-0 mt-5">
-       <div class="container">
-            
-       </div>
-    </main>
+        <div class="container mt-3">
+             <div class="row row-cols-1 row-cols-lg-2">
+                 <div class="col">
+                     <h1 class="display-5 fw-bold lh-1 mb-3">
+                         TacoCat: A Coding Challenge
+                     </h1>
+                     <h4 class="lead mb-4">TacoCat is a palindrome. A Palindrome is a word, phrase, or sequence
+                        that reads the same backward as forward. Write a program the checks if the phrase entered is a 
+                        <strong>Palindrome.</strong>
+                     </h4>
+                 </div>
+                 <div class="col">
+                     <h5>Enter a phrase or word to check</h5>
+                     <form class="row gx-3 gy-2">
+                         <div class="col">
+                             <input id="userString" type="text" class="form-control" placeholder="Enter a String" aria-label="Enter a String">
+                         </div>
+                         <div class="col-12">
+                             <button id="btnSubmit" type="button" class="btn mt-2">Check it</button>
+                         </div>
+                         <!--Hidden-->
+                         <div id="alert" class="alert alert-success mt-5 invisible fade show" role="alert">
+                             <h4 class="alert-heading" id="alert-heading"></h4>
+                             <hr>
+                             <p class="mb-0" id="msg">
+                                 <!--Insert a Message here-->
+                             </p>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+        </div>
+     </main>
 
     <!--Footer-->
     <footer class="footer fixed-bottom mt-auto py-3">
@@ -75,7 +104,7 @@
                     <div class="row">
                         <!--Github-->
                         <div class="col">
-                            <a href="https://github.com/BrittP-NBCC/Hundo" target="_blank">
+                            <a href="https://github.com/BrittP-NBCC/TacoCat" target="_blank">
                                 <span class="icon">
                                   <i class="fab fa-github-alt" title="Github"></i>
                                 </span>
@@ -127,6 +156,9 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getValue);
+    </script>
 </body>
 
 </html>
